@@ -1,61 +1,124 @@
 # Smart Home Automation System 🏠⚡
 
-An ESP8266-powered smart home automation and security system designed for real-time monitoring, intelligent control, and enhanced home safety through an interactive cyber-inspired web interface.
-
-## ✨ Key Features
-
-- Secure login-based web dashboard for authorized access
-- Real-time monitoring of temperature and lighting conditions
-- Ultrasonic sensor based intrusion detection with buzzer alerts
-- Servo motor powered smart door locking mechanism
-- PWM-based fan speed regulation for efficient environmental control
-- Live device status updates through a responsive web interface
+An ESP8266-powered smart home automation and security system designed for intelligent appliance control, environmental monitoring, and real-time security management through a cyber-themed web dashboard. The project integrates IoT communication, embedded systems, and automation technologies to create a centralized smart home ecosystem.
 
 ---
 
-## 🔧 Hardware Components
+# ✨ Features
 
-- ESP8266 NodeMCU / Wemos D1 Mini
-- HC-SR04 Ultrasonic Sensor
-- LM35 Temperature Sensor
-- MG90S Servo Motor
-- DC Fan with PWM control
-- 5V Buzzer
-- LEDs / Relay Module
+- Secure cyber-themed web dashboard
+- Real-time temperature and device monitoring
+- Ultrasonic and PIR-based intrusion detection
+- Servo motor controlled smart door lock system
+- PWM-based intelligent fan speed regulation
+- Real-time alert system using buzzer notifications
+- Interactive appliance control interface
+- Dynamic environmental monitoring and automation
 
 ---
 
-## 📍 GPIO Configuration
+# 🧠 System Overview
 
-| Component | Pin | Purpose |
+The system uses an ESP8266 NodeMCU as the central controller to monitor sensor inputs and automate home devices. Environmental conditions and security events are continuously processed and displayed through a responsive web dashboard interface.
+
+The project combines embedded hardware components with web-based control mechanisms to provide a smart, efficient, and secure automation platform.
+
+---
+
+# 🖼️ System Architecture
+
+The following diagram illustrates the integration of sensors, actuators, and the ESP8266 controller used in the system.
+
+![System Architecture](images/system-architecture.png)
+
+---
+
+# 🌐 Dashboard Interface
+
+The project features a cyber-inspired dashboard for real-time monitoring and smart device control.
+
+![Dashboard UI](images/dashboard-ui.png)
+
+---
+
+# 🔧 Hardware Components
+
+| Component | Purpose |
+|---|---|
+| ESP8266 NodeMCU | Main controller and WiFi communication |
+| HC-SR04 Ultrasonic Sensor | Intrusion detection |
+| PIR Motion Sensor | Motion sensing |
+| LM35 Temperature Sensor | Temperature monitoring |
+| MG90S Servo Motor | Smart door locking |
+| DC Fan | Automated airflow control |
+| LCD 16x2 Display | Status monitoring |
+| Buzzer | Security alerts |
+| LEDs | Lighting indication and control |
+
+---
+
+# 📍 GPIO Pin Mapping
+
+| Component | Pin | Function |
 |---|---|---|
-| Light Control | D0 | Smart Lighting |
-| LM35 Sensor | A0 | Temperature Monitoring |
-| Buzzer | D4 | Security Alert |
-| Ultrasonic Sensor | D5 / D6 | Distance & Intrusion Detection |
+| Light / LED | D0 | Lighting Control |
+| LM35 Sensor | A0 | Temperature Input |
+| Buzzer | D4 | Alert System |
+| Ultrasonic Sensor | D5 / D6 | Distance Detection |
 | Fan Control | D7 | PWM Fan Regulation |
-| Servo Motor | D8 | Smart Door Lock |
+| Servo Motor | D8 | Door Lock Mechanism |
+| PIR Sensor | D3 | Motion Detection |
 
 ---
 
-## 💻 Software Stack
+# 💻 Software Stack
 
-### Technologies Used
+## Technologies Used
+
 - Arduino C++
 - HTML5
 - CSS3
 - JavaScript
+- ESP8266 Web Server
 
-### Libraries
+## Libraries Used
+
 - ESP8266WiFi.h
 - ESP8266WebServer.h
 - Servo.h
+- LiquidCrystal_I2C.h
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Functional Modules
 
-1. Clone the repository
+## 🔐 Smart Security
+
+- Motion and intrusion detection using PIR and ultrasonic sensors
+- Real-time alert generation using buzzer notifications
+- Servo-based automated locking mechanism
+
+## 🌡️ Environmental Monitoring
+
+- Continuous temperature sensing using LM35
+- Intelligent fan speed control through PWM
+
+## 💡 Appliance Automation
+
+- Lighting control through web interface
+- Real-time device state updates
+
+## 📊 Web Dashboard
+
+- Dynamic cyber-themed interface
+- Live monitoring and control
+- Real-time environmental data visualization
+
+---
+
+# 🚀 Setup Instructions
+
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/smart-home-automation.git
