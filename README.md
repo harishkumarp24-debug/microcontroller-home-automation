@@ -25,22 +25,6 @@ The project combines embedded hardware components with web-based control mechani
 
 ---
 
-# 🖼️ System Architecture
-
-The following diagram illustrates the integration of sensors, actuators, and the ESP8266 controller used in the system.
-
-![System Architecture](images/system-architecture.png)
-
----
-
-# 🌐 Dashboard Interface
-
-The project features a cyber-inspired dashboard for real-time monitoring and smart device control.
-
-![Dashboard UI](images/dashboard-ui.png)
-
----
-
 # 🔧 Hardware Components
 
 | Component | Purpose |
