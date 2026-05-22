@@ -1,36 +1,61 @@
-#A high-performance, ESP8266-based smart home automation system featuring a neon-themed "Cyber-Sec" web dashboard. This system integrates hardware sensors with a secure web interface for real-time monitoring and control.
+# Smart Home Automation System 🏠⚡
 
-🚀 Features
-Secure Authentication: Password-protected "Cyber-Sec" login portal.
-Dynamic Dashboard: Real-time UI updates for temperature, light status, and door security.
-Automated Security: Ultrasonic-based intruder detection with buzzer alerts.
-Environment Control: - PWM-controlled multi-speed fan logic.
-Servo-controlled door locking mechanism.
-Temperature monitoring via LM35.
-🛠️ Hardware Stack
-Microcontroller: ESP8266 (NodeMCU/Wemos D1 Mini)
-Sensors: HC-SR04 (Ultrasonic), LM35 (Temperature)
-Actuators: MG90S Servo (Door), DC Fan (via Transistor/PWM), 5V Buzzer, LED/Relay (Lighting)
-📌 Pin Mapping
-Component	Pin	Function
-Light	D0	Lighting Control
-Temperature	A0	LM35 Analog Input
-Buzzer	D4	Alert System
-Ultrasonic	D5 (Echo), D6 (Trig)	Intruder Detection
-Fan	D7	PWM Speed Control
-Servo	D8	Door Lock Mechanism
-💻 Software & Libraries
-Language: C++ (Arduino Framework)
-Frontend: HTML5, CSS3 (Neon-Cyber Theme), JavaScript (Fetch API)
-Libraries: - ESP8266WiFi.h & ESP8266WebServer.h
-Servo.h
-⚙️ Setup Instructions
-Clone the repo: git clone https://github.com/YOUR_USERNAME/Smart-Home-CyberSec.git
-Configuration: Update AP_SSID and AP_PASSWORD in the .ino file if necessary.
-Upload: Use the Arduino IDE to upload the code to your ESP8266.
-Connect: Connect to the WiFi Access Point: TouchlessBell_Cyber.
-Access: Open 192.168.4.1 in your browser to enter the Cyber-Sec portal.
-Below are the interface designs and hardware photos showcasing and the physical integration of the sensors. image
+An ESP8266-powered smart home automation and security system designed for real-time monitoring, intelligent control, and enhanced home safety through an interactive cyber-inspired web interface.
 
-image
-Developed as part of an IoT Security & Automation exploration.
+## ✨ Key Features
+
+- Secure login-based web dashboard for authorized access
+- Real-time monitoring of temperature and lighting conditions
+- Ultrasonic sensor based intrusion detection with buzzer alerts
+- Servo motor powered smart door locking mechanism
+- PWM-based fan speed regulation for efficient environmental control
+- Live device status updates through a responsive web interface
+
+---
+
+## 🔧 Hardware Components
+
+- ESP8266 NodeMCU / Wemos D1 Mini
+- HC-SR04 Ultrasonic Sensor
+- LM35 Temperature Sensor
+- MG90S Servo Motor
+- DC Fan with PWM control
+- 5V Buzzer
+- LEDs / Relay Module
+
+---
+
+## 📍 GPIO Configuration
+
+| Component | Pin | Purpose |
+|---|---|---|
+| Light Control | D0 | Smart Lighting |
+| LM35 Sensor | A0 | Temperature Monitoring |
+| Buzzer | D4 | Security Alert |
+| Ultrasonic Sensor | D5 / D6 | Distance & Intrusion Detection |
+| Fan Control | D7 | PWM Fan Regulation |
+| Servo Motor | D8 | Smart Door Lock |
+
+---
+
+## 💻 Software Stack
+
+### Technologies Used
+- Arduino C++
+- HTML5
+- CSS3
+- JavaScript
+
+### Libraries
+- ESP8266WiFi.h
+- ESP8266WebServer.h
+- Servo.h
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/smart-home-automation.git
